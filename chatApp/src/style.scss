@@ -97,6 +97,10 @@
             background-color: #3e3c61;
             position: relative;
 
+            @include mobile{
+                width: 25%;
+            }
+
             .userChat{
                 padding: 10px;
                 display: flex;
@@ -116,13 +120,18 @@
                 }
 
                 .userChatInfo{
+                    @include mobile{
+                        display: none;
+                    }
                   span{
                     font-size: 18px;
                     font-weight: 500;
+                   
                   }  
                   p{
                     font-size: 14px;
                     color: lightgray;
+                   
                   }
                 }
             }
@@ -141,11 +150,15 @@
 
                 .logo{
                     font-weight: bold;
+                    @include mobile{
+                        display: none;
+                    }
                     }
 
                     .user{
                         display: flex;
                         gap: 10px;
+                        
                     }
 
                     img{
@@ -201,6 +214,7 @@
                     }
 
                     .userChatInfo{
+                        
                       span{
                         font-size: 18px;
                         font-weight: 500;
