@@ -1,3 +1,13 @@
+@mixin mobile{
+    @media screen and (max-width:480px){
+        @content;
+    }
+}
+
+
+
+
+
 .formContainer{
     background-color: #a7bcff;
     height: 100vh;
@@ -85,6 +95,8 @@
         .sidebar{
             flex: 1;
             background-color: #3e3c61;
+            position: relative;
+
             .userChat{
                 padding: 10px;
                 display: flex;
@@ -221,6 +233,7 @@
                 img{
                     height: 24px;
                     cursor: pointer;
+                    background: transparent;
 
                 }
             }
